@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>로렌델 프로젝트｜180일 누적 루틴</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef6f1; --bg2:#f9fbf7; --deep:#1c332b; --surface:#ffffff; --card:#ffffff;
+  --green:#74a989; --green2:#a9ccb6; --mint:#dbeee3; --gold:#c8a96b; --rose:#e8b7b7;
+  --text:#26352f; --muted:#6f8078; --line:rgba(28,51,43,.13); --danger:#b46b6b;
+  --shadow:0 12px 32px rgba(28,51,43,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0} body{font-family:'Noto Sans KR',sans-serif;background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 42%,#fff 100%);color:var(--text);min-height:100vh;padding-bottom:82px}.hero{position:relative;overflow:hidden;padding:30px 18px 20px;text-align:center;background:radial-gradient(circle at 20% -10%,rgba(200,169,107,.28),transparent 35%),linear-gradient(135deg,#eff9f2,#d8eadf);border-bottom:1px solid var(--line)}.hero:before{content:'✦';position:absolute;left:26px;top:20px;color:rgba(116,169,137,.35);font-size:34px}.hero:after{content:'';position:absolute;right:-38px;top:-34px;width:150px;height:150px;border-radius:50%;background:rgba(116,169,137,.16)}h1{font-size:1.45rem;letter-spacing:-.5px;color:var(--deep);font-weight:900}.sub{font-size:.82rem;color:var(--muted);margin-top:6px;line-height:1.55}.badge{display:inline-flex;gap:8px;align-items:center;margin-top:13px;padding:7px 14px;border:1px solid rgba(116,169,137,.3);background:rgba(255,255,255,.55);border-radius:999px;box-shadow:0 8px 24px rgba(28,51,43,.06)}.badge b{color:var(--green);font-size:1.06rem}.badge span{font-size:.72rem;color:var(--muted)}.nav{display:flex;position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav button{flex:1;border:0;background:none;padding:12px 2px;font-family:inherit;font-size:.64rem;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent}.nav button.active{color:var(--deep);font-weight:800;border-bottom-color:var(--green)}.page{display:none;padding:15px}.page.active{display:block}.card{background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:13px;box-shadow:var(--shadow)}.title{display:flex;gap:7px;align-items:center;margin-bottom:10px;color:var(--deep);font-weight:900;font-size:.93rem}.small{font-size:.78rem;color:var(--muted);line-height:1.7}.setup{text-align:center;padding:22px}.input{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 13px;font-family:inherit;font-size:.9rem;background:#fff;color:var(--text);outline:none}.btn{width:100%;border:0;border-radius:13px;padding:12px 14px;font-family:inherit;font-weight:900;background:linear-gradient(135deg,var(--green),#5f9677);color:white;margin-top:10px;cursor:pointer}.btn.ghost{background:#fff;color:var(--green);border:1px solid rgba(116,169,137,.35)}.btn.warn{background:rgba(180,107,107,.1);color:var(--danger);border:1px solid rgba(180,107,107,.25)}.progress{height:9px;background:rgba(28,51,43,.08);border-radius:999px;overflow:hidden;margin-top:8px}.fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--green));border-radius:999px;transition:.35s}.checklist{display:flex;flex-direction:column;gap:8px}.item{display:flex;gap:10px;align-items:flex-start;padding:11px 12px;border:1px solid transparent;background:rgba(219,238,227,.35);border-radius:13px;cursor:pointer;transition:.2s}.item.done{background:rgba(116,169,137,.18);border-color:rgba(116,169,137,.25)}.box{width:21px;height:21px;border:2px solid rgba(116,169,137,.45);border-radius:7px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:white;font-weight:900;font-size:.75rem;margin-top:1px}.done .box{background:var(--green);border-color:var(--green)}.done .txt{text-decoration:line-through;color:#7d8c86}.txt{font-size:.84rem;line-height:1.45}.cat{font-size:.65rem;color:var(--green);font-weight:800;margin-top:2px}.level{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:9px}.level b{color:var(--deep)}.level span{font-size:.72rem;color:var(--muted)}.pill{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--mint);font-size:.68rem;color:var(--green);font-weight:900;margin:2px 3px 2px 0}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px}.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 10px;font-family:inherit;color:var(--muted);font-size:.72rem}.tabs button.active{background:var(--green);color:white;font-weight:900;border-color:var(--green)}.phase{border-left:3px solid var(--green2);padding-left:12px;margin:13px 0}.phase h3{font-size:.9rem;color:var(--deep);margin-bottom:5px}.phase p{font-size:.78rem;color:var(--muted);line-height:1.7}.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.cal-head button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 10px;color:var(--muted)}.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px}.dow{text-align:center;color:var(--muted);font-size:.66rem;padding:4px 0}.day{aspect-ratio:1;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.74rem;background:rgba(255,255,255,.5);color:var(--muted);position:relative}.day.plan{background:rgba(219,238,227,.7);color:var(--text)}.day.today{background:var(--green);color:white;font-weight:900}.day.done{background:rgba(200,169,107,.35);color:var(--deep);font-weight:800}.day.start{outline:2px solid var(--gold)}.weight-row{display:flex;gap:8px}.weight-row input{flex:1}.log{display:flex;flex-direction:column;gap:7px;margin-top:12px}.entry{display:flex;justify-content:space-between;align-items:center;background:rgba(219,238,227,.35);border-radius:12px;padding:9px 11px;font-size:.82rem}.entry b{color:var(--green)}textarea{width:100%;min-height:118px;resize:none;border:1px solid var(--line);border-radius:14px;padding:12px;font-family:inherit;line-height:1.6;color:var(--text);outline:none}.notice{background:rgba(232,183,183,.18);border:1px solid rgba(180,107,107,.18)}.notice .title{color:#8f5757}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.mini{padding:10px;border-radius:13px;background:rgba(219,238,227,.45);border:1px solid var(--line)}.mini b{display:block;color:var(--deep);font-size:.8rem;margin-bottom:4px}.mini span{font-size:.72rem;color:var(--muted);line-height:1.5;display:block}@media(min-width:760px){body{max-width:760px;margin:0 auto}.page{padding:18px}.hero{border-radius:0 0 24px 24px}.mini-grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header class="hero"><h1>로렌델 프로젝트 🌿</h1><div class="sub">크고 가늘고 깨끗한 엘프상으로 가는<br>180일 누적형 데일리 미용 루틴</div><div id="badge"></div></header>
+<nav class="nav"><button class="active" onclick="show('today',this)">오늘</button><button onclick="show('shower',this)">샤워</button><button onclick="show('levels',this)">레벨</button><button onclick="show('calendar',this)">달력</button><button onclick="show('body',this)">몸무게</button><button onclick="show('diary',this)">일기</button></nav>
+
+<section id="today" class="page active"><div id="setup"></div><div id="mainToday" style="display:none"><div class="card"><div class="level"><div><b id="levelName"></b><br><span id="levelDesc"></span></div><span id="dayText"></span></div><div class="small" id="progText"></div><div class="progress"><div id="bar" class="fill"></div></div></div><div class="card"><div class="title">✨ 오늘의 누적 미션</div><div class="small" style="margin-bottom:10px">이전 레벨의 미션은 사라지지 않아요. 로렌델은 매일 쌓이는 루틴으로 만들어집니다.</div><div id="checks" class="checklist"></div></div><div class="card"><div class="title">🌙 오늘 최소 성공 기준</div><div class="small" id="minGoal"></div></div><div class="card notice"><div class="title">⚠️ 피부 안전 규칙</div><div class="small">코 주변 주사피부염이 의심되면 스크럽, 필링패드, 코팩, 고농도 비타민C, 레티놀, 강한 산 성분은 일단 피하세요. 따갑고 붉어지면 새 제품은 중단하고 피부과 진료를 우선으로 잡는 게 좋아요.</div></div><div class="card"><button class="btn ghost" onclick="resetToday()">오늘 체크만 초기화</button><button class="btn warn" onclick="restartPlan()">플랜 시작일을 오늘로 재시작</button></div></div></section>
+
+
+<section id="shower" class="page">
+  <div class="card">
+    <div class="title">🚿 샤워 루틴 탭</div>
+    <div class="small">샤워를 배운 적이 없어도 괜찮아요. 위에서 아래로, 바깥에서 안쪽으로, 부드럽게 씻는 순서만 기억하면 됩니다. 제모는 매일 하는 항목이 아니라 <b>선택 미션</b>이에요.</div>
+  </div>
+  <div class="card">
+    <div class="level"><div><b>오늘의 샤워 체크</b><br><span>체크 기록은 매일 따로 저장돼요</span></div><span id="showerProg">0%</span></div>
+    <div class="progress"><div id="showerBar" class="fill"></div></div>
+  </div>
+  <div class="card"><div class="title">🧼 기본 샤워 순서</div><div id="showerBasic" class="checklist"></div></div>
+  <div class="card"><div class="title">🌿 샤워 후 정리</div><div id="showerAfter" class="checklist"></div></div>
+  <div class="card"><div class="title">🪒 제모 / 특별 관리</div><div class="small" style="margin-bottom:10px">피부가 예민하거나 주사피부염이 의심되는 날은 얼굴 제모, 스크럽, 강한 마찰은 하지 마세요. 몸 제모도 따갑거나 빨갛게 올라오면 쉬는 게 맞아요.</div><div id="showerOptional" class="checklist"></div></div>
+  <div class="card notice"><div class="title">⚠️ 샤워 안전 규칙</div><div class="small">뜨거운 물로 오래 씻으면 홍조와 건조가 심해질 수 있어요. 미지근한 물, 10~15분 안쪽, 박박 문지르지 않기. 샤워 후에는 물기를 톡톡 누르고 보습제를 바르면 좋아요.</div></div>
+</section>
+
+<section id="levels" class="page"><div class="card"><div class="title">🎮 누적 레벨 구조</div><div class="small">게임처럼 레벨이 오를수록 도전과제가 늘어납니다. 단, 양치·세안·보습·머리 관리처럼 기본 루틴은 끝까지 유지돼요.</div></div><div class="tabs" id="levelTabs"></div><div id="levelInfo"></div></section>
+
+<section id="calendar" class="page"><div class="card"><div class="cal-head"><button onclick="moveMonth(-1)">◀</button><b id="calTitle"></b><button onclick="moveMonth(1)">▶</button></div><div id="cal" class="cal-grid"></div><div class="small" style="margin-top:10px">초록: 플랜 기간 / 금색: 절반 이상 완료 / 진초록: 오늘</div></div></section>
+
+<section id="body" class="page"><div class="card"><div class="title">⚖️ 몸무게 기록</div><div class="small" style="margin-bottom:10px">목표는 급격한 감량이 아니라 “가늘고 건강해 보이는 라인”이에요. 주 0.3~0.6kg 정도면 충분합니다.</div><div class="weight-row"><input id="weightInput" class="input" type="number" step="0.1" placeholder="예: 65.0"><button class="btn" style="width:auto;margin-top:0" onclick="addWeight()">기록</button></div><div id="weightLog" class="log"></div></div><div class="card"><div class="title">🌿 체형 목표</div><div class="mini-grid"><div class="mini"><b>1차</b><span>65 → 62kg<br>붓기·생활리듬 정리</span></div><div class="mini"><b>2차</b><span>62 → 59kg<br>얼굴선 변화 시작</span></div><div class="mini"><b>3차</b><span>59 → 56kg<br>옷핏 변화</span></div><div class="mini"><b>4차</b><span>56 → 53kg<br>엘프상 라인 접근</span></div></div></div></section>
+
+<section id="diary" class="page"><div class="card"><div class="title">📝 오늘의 기록</div><textarea id="diaryText" placeholder="오늘 씻었는지, 머리가 얼마나 풀렸는지, 피부가 따가웠는지, 기분은 어땠는지 적어주세요."></textarea><button class="btn" onclick="saveDiary()">저장하기</button></div><div class="card"><div class="title">📖 지난 기록</div><div id="diaryList" class="log"></div></div></section>
+
+<script>
+const levels=[
+{day:1,name:'Lv.1 물방울',desc:'몸을 다시 씻는 감각에 익숙해지는 단계',min:'양치 1회 + 얼굴 물세안 + 몸 한 군데 닦기 + 머리 끝부분 5분 풀기',tasks:[['구강','양치 1회'],['세안','얼굴 물세안 1회'],['샤워','몸 한 군데라도 씻기 또는 물티슈/수건으로 닦기'],['보습','수분크림 또는 보습제 1회'],['머리','엉킨 머리 끝부분부터 5분 풀기'],['수분','물 1컵 마시기']]},
+{day:8,name:'Lv.2 새싹',desc:'냄새·피지·두피를 안정시키는 단계',min:'양치 1회 + 저녁 세안 + 보습 + 부분 샤워 또는 샤워 탭 3개',tasks:[['구강','양치 1회'],['세안','저녁 순한 클렌저 세안 1회'],['샤워','겨드랑이·목·가슴밑/배·발 중 2곳 씻기'],['보습','세안 후 보습제 1회'],['머리','엉킨 머리 끝부분부터 10분 풀기'],['두피','가능한 날 샴푸 또는 두피 헹구기'],['수분','물 2컵 마시기']]},
+{day:15,name:'Lv.3 맑은 잎',desc:'기본 청결을 매일 루틴으로 굳히는 단계',min:'양치 2회 중 1회 이상 + 저녁 세안 + 샤워/부분샤워 + 머리 관리',tasks:[['구강','아침 또는 점심 양치 1회'],['구강','자기 전 양치 1회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 또는 부분샤워 1회'],['보습','저녁 보습제 바르기'],['머리','머리 끝부분부터 10분 풀기'],['수분','물 500ml 마시기'],['정돈','손톱 밑 확인하고 더러우면 씻기']]},
+{day:22,name:'Lv.4 숲의 습관',desc:'피부 장벽과 머릿결을 같이 살리는 단계',min:'양치 2회 + 저녁 세안/보습 + 샤워 탭 5개 이상',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 탭 기본 순서 5개 이상 체크'],['보습','아침 또는 저녁 보습제'],['자외선','외출 시 선크림'],['머리','린스/트리트먼트로 엉킨 부분 풀기'],['머리','아래쪽부터 넓은 빗으로 3분 빗기'],['수분','물 700ml 마시기'],['움직임','집 안 걷기 또는 스트레칭 10분']]},
+{day:36,name:'Lv.5 은빛 결',desc:'머리카락을 엘프 분위기의 장점으로 바꾸는 단계',min:'기본 위생 + 샤워 후 몸 보습 + 머리 말리기 + 물 1L',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 또는 부분샤워 1회'],['샤워후','샤워 후 몸 보습제 또는 바디로션 바르기'],['보습','저녁 보습제'],['자외선','외출 시 선크림'],['머리','샴푸한 날 트리트먼트 사용'],['머리','젖은 머리로 바로 눕지 않기'],['머리','머리 끝 오일/에센스 소량'],['수분','물 1L 마시기'],['움직임','산책 또는 실내 걷기 15분']]},
+{day:50,name:'Lv.6 흰 달빛',desc:'피부가 덜 자극받고 얼굴이 맑아지는 단계',min:'기본 위생 + 선크림/보습 + 샤워 루틴 + 걷기',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 탭 기본 순서 6개 이상 체크'],['보습','아침 보습제'],['보습','저녁 보습제'],['자외선','외출 시 선크림'],['머리','하루 1회 아래부터 부드럽게 빗기'],['머리','샴푸한 날 두피 완전히 말리기'],['수분','물 1L 이상'],['움직임','걷기 20분'],['식사','단백질 한 가지 먹기']]},
+{day:64,name:'Lv.7 고요한 윤곽',desc:'체형과 자세가 엘프상으로 정돈되는 단계',min:'기본 위생 + 샤워/보습 + 걷기 20분 + 자세 3분',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 또는 부분샤워 1회'],['샤워후','몸 접히는 곳과 발가락 사이까지 말리기'],['보습','아침/저녁 보습제'],['자외선','외출 시 선크림'],['머리','머리 빗기 1회'],['머리','트리트먼트 또는 린스 사용'],['수분','물 1.2L 목표'],['움직임','걷기 20분'],['자세','벽에 기대 목·어깨 펴기 3분'],['식사','단백질 한 가지 + 과식 전 5분 멈춤']]},
+{day:78,name:'Lv.8 엘프의 선',desc:'단아하고 중성적인 분위기를 만드는 단계',min:'기본 루틴 + 샤워 후 정돈 + 눈썹/입술 정돈 중 하나',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 탭 기본 순서 7개 이상 체크'],['샤워후','바디로션 또는 건조한 부위 보습'],['보습','아침/저녁 보습제'],['자외선','외출 시 선크림'],['머리','빗기 1회 + 엉킴 즉시 풀기'],['수분','물 1.2L'],['움직임','걷기 25분'],['자세','목 길어 보이게 어깨 내리기 3분'],['정돈','눈썹 주변 잔털 확인 또는 정리 예약'],['정돈','립밤 바르기'],['식사','단백질 + 채소 또는 과일 한 가지']]},
+{day:92,name:'Lv.9 유리 정원',desc:'기초 화장과 청결감이 외형을 바꾸는 단계',min:'기본 루틴 + 샤워/보습 + 선크림 + 립밤',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 또는 부분샤워 1회'],['샤워후','샤워 후 몸 보습과 발 말리기'],['보습','아침/저녁 보습제'],['자외선','외출 시 선크림'],['머리','머리 빗기 1회'],['머리','머리 말리고 자기'],['수분','물 1.2L'],['움직임','걷기 25분'],['자세','어깨·목 스트레칭 5분'],['정돈','립밤'],['미용','외출 전 선크림 톤업 또는 쿠션 연습'],['식사','단백질 한 가지']]},
+{day:106,name:'Lv.10 로렌델 후보',desc:'생활감이 깨끗한 사람으로 보이기 시작하는 단계',min:'기본 루틴 + 샤워 + 걷기 + 머리 윤기 관리',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 탭 기본 순서 8개 이상 체크'],['샤워후','바디로션 + 손/발 보습 중 하나'],['보습','아침/저녁 보습제'],['자외선','외출 시 선크림'],['머리','머리 빗기 1회'],['머리','헤어에센스 소량'],['머리','두피 말리고 자기'],['수분','물 1.3L 목표'],['움직임','걷기 30분'],['자세','목·어깨 스트레칭 5분'],['정돈','손톱/발톱 확인'],['미용','눈썹 결 정리 또는 투명 마스카라/브로우 연습'],['식사','단백질 + 채소/과일 한 가지']]},
+{day:121,name:'Lv.11 숲의 귀족',desc:'가늘고 단아한 실루엣을 안정화하는 단계',min:'기본 루틴 + 샤워/제모 선택관리 + 움직임 30분 + 식사 조절 한 가지',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 또는 부분샤워 1회'],['샤워후','몸 보습 + 발가락 사이 말리기'],['선택관리','겨드랑이/다리 제모 상태 확인 또는 쉬기'],['보습','아침/저녁 보습제'],['자외선','외출 시 선크림'],['머리','머리 빗기 1회'],['머리','트리트먼트 관리'],['수분','물 1.3L'],['움직임','걷기 30분'],['근력','스쿼트 10개 또는 앉았다 일어나기 10회'],['자세','벽 자세 3분'],['정돈','립밤 + 손 보습'],['미용','쿠션/눈썹/립 중 하나 연습'],['식사','야식 또는 과식 줄이기 한 가지 선택']]},
+{day:151,name:'Lv.12 로렌델 모드',desc:'유지 가능한 아름다움으로 굳히는 단계',min:'오늘 컨디션에 맞춰 70%만 해도 성공',tasks:[['구강','양치 2회'],['세안','아침 물세안'],['세안','저녁 순한 클렌저 세안'],['샤워','샤워 탭 기본 순서 8개 이상 체크'],['샤워후','몸 보습 + 물기 말리기'],['선택관리','제모/손발톱/향기 중 하나 정돈'],['보습','아침/저녁 보습제'],['자외선','외출 시 선크림'],['머리','머리 빗기 1회'],['머리','두피 말리고 자기'],['머리','헤어에센스 또는 트리트먼트 관리'],['수분','물 1.3~1.5L'],['움직임','걷기 30분'],['근력','스쿼트 10개 또는 플랭크 20초'],['자세','목·어깨 스트레칭 5분'],['정돈','손톱/입술/향기 중 하나 정돈'],['미용','가벼운 베이스 또는 눈썹 또는 립'],['식사','단백질 + 과식 전 멈춤'],['기록','오늘 피부/머리/샤워 상태 한 줄 기록']]}
+]
+let state={checks:{},diary:[],weight:[],cal:new Date()};
+function ymd(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function load(){state.checks=JSON.parse(localStorage.lorendelChecks||'{}');state.diary=JSON.parse(localStorage.lorendelDiary||'[]');state.weight=JSON.parse(localStorage.lorendelWeight||'[]');}
+function save(){localStorage.lorendelChecks=JSON.stringify(state.checks);localStorage.lorendelDiary=JSON.stringify(state.diary);localStorage.lorendelWeight=JSON.stringify(state.weight)}
+function startDate(){let s=localStorage.lorendelStart;return s?new Date(s):null}
+function dayNum(){let s=startDate();if(!s)return 0;let t=new Date();s.setHours(0,0,0,0);t.setHours(0,0,0,0);return Math.floor((t-s)/86400000)+1}
+function levelFor(day){let cur=levels[0];for(const l of levels){if(day>=l.day)cur=l}return cur}
+function setup(){const s=startDate();document.getElementById('badge').innerHTML=s?`<div class="badge"><b>${dayNum()}일째</b><span>${levelFor(dayNum()).name}</span></div>`:'';document.getElementById('setup').innerHTML=s?'':`<div class="card setup"><div class="title" style="justify-content:center">🌱 시작일 설정</div><div class="small">오늘부터 로렌델 프로젝트를 시작해요. 체크 기록은 휴대폰 브라우저에 저장됩니다.</div><input id="startInput" class="input" type="date" value="${ymd(new Date())}" style="margin-top:14px"><button class="btn" onclick="start()">프로젝트 시작</button></div>`;document.getElementById('mainToday').style.display=s?'block':'none'}
+function start(){localStorage.lorendelStart=new Date(document.getElementById('startInput').value+'T00:00:00').toISOString();renderAll()}
+function todayTasks(){let d=dayNum();return levelFor(d).tasks}
+function renderToday(){setup();if(!startDate())return;let d=dayNum(), lv=levelFor(d), key=ymd(new Date());document.getElementById('levelName').textContent=lv.name;document.getElementById('levelDesc').textContent=lv.desc;document.getElementById('dayText').textContent=`${d}일차`;document.getElementById('minGoal').textContent=lv.min;const tasks=todayTasks();let done=0;document.getElementById('checks').innerHTML=tasks.map((t,i)=>{let id=key+'_'+i, ok=!!state.checks[id];if(ok)done++;return `<div class="item ${ok?'done':''}" onclick="toggle('${id}')"><div class="box">${ok?'✓':''}</div><div><div class="txt">${t[1]}</div><div class="cat">${t[0]}</div></div></div>`}).join('');let pct=Math.round(done/tasks.length*100);document.getElementById('progText').textContent=`${done} / ${tasks.length} 완료 (${pct}%)`;document.getElementById('bar').style.width=pct+'%'}
+function toggle(id){state.checks[id]=!state.checks[id];save();renderToday();renderCal()}
+function resetToday(){let key=ymd(new Date());Object.keys(state.checks).forEach(k=>{if(k.startsWith(key+'_'))delete state.checks[k]});save();renderToday();renderCal()}
+function restartPlan(){if(confirm('시작일을 오늘로 다시 설정할까요? 체크/일기/몸무게 기록은 유지됩니다.')){localStorage.lorendelStart=new Date().toISOString();renderAll()}}
+function renderLevels(sel=levelFor(Math.max(dayNum(),1)).day){const tabs=document.getElementById('levelTabs');tabs.innerHTML=levels.map(l=>`<button class="${l.day==sel?'active':''}" onclick="renderLevels(${l.day})">${l.name}</button>`).join('');let l=levels.find(x=>x.day==sel);document.getElementById('levelInfo').innerHTML=`<div class="card"><div class="title">${l.name}</div><div class="small">${l.desc}<br><br><b>시작:</b> ${l.day}일차부터<br><b>최소 성공:</b> ${l.min}</div><div style="margin-top:10px">${l.tasks.map(t=>`<span class="pill">${t[0]}</span>`).join('')}</div></div><div class="card"><div class="title">📋 이 레벨의 매일 체크 항목</div><div class="checklist">${l.tasks.map(t=>`<div class="item"><div class="box"></div><div><div class="txt">${t[1]}</div><div class="cat">${t[0]}</div></div></div>`).join('')}</div></div>`}
+function renderCal(){let c=state.cal,y=c.getFullYear(),m=c.getMonth();document.getElementById('calTitle').textContent=`${y}년 ${m+1}월`;let grid=document.getElementById('cal');grid.innerHTML='';['일','월','화','수','목','금','토'].forEach(x=>grid.innerHTML+=`<div class="dow">${x}</div>`);let first=new Date(y,m,1).getDay(), last=new Date(y,m+1,0).getDate();for(let i=0;i<first;i++)grid.innerHTML+='<div></div>';let s=startDate();let today=ymd(new Date());for(let d=1;d<=last;d++){let date=new Date(y,m,d), key=ymd(date), cls='day';if(s && date>=new Date(s.getFullYear(),s.getMonth(),s.getDate()) && date<=new Date(s.getTime()+180*86400000))cls+=' plan';if(key==today)cls+=' today';if(s && key==ymd(s))cls+=' start';let taskCount=0, done=0;Object.keys(state.checks).forEach(k=>{if(k.startsWith(key+'_')){taskCount++; if(state.checks[k])done++}});if(taskCount&&done>=Math.ceil(taskCount*.5)&&key!=today)cls+=' done';grid.innerHTML+=`<div class="${cls}">${d}</div>`}}
+function moveMonth(n){state.cal.setMonth(state.cal.getMonth()+n);renderCal()}
+function addWeight(){let v=parseFloat(document.getElementById('weightInput').value);if(!v)return;state.weight.unshift({date:new Date().toLocaleDateString('ko-KR'),v});document.getElementById('weightInput').value='';save();renderWeight()}
+function renderWeight(){document.getElementById('weightLog').innerHTML=state.weight.length?state.weight.map((e,i)=>{let diff='';if(state.weight[i+1]){let d=(e.v-state.weight[i+1].v).toFixed(1);diff=` <span style="color:${d<=0?'var(--green)':'var(--danger)'}">${d>0?'+':''}${d}kg</span>`}return `<div class="entry"><span>${e.date}${diff}</span><b>${e.v}kg</b></div>`}).join(''):'<div class="small">아직 기록이 없어요.</div>'}
+function saveDiary(){let t=document.getElementById('diaryText').value.trim();if(!t)return;state.diary.unshift({date:new Date().toLocaleString('ko-KR'),t});document.getElementById('diaryText').value='';save();renderDiary()}
+function renderDiary(){document.getElementById('diaryList').innerHTML=state.diary.length?state.diary.map(e=>`<div class="entry" style="display:block"><b>${e.date}</b><div class="small" style="margin-top:5px">${e.t.replace(/</g,'&lt;')}</div></div>`).join(''):'<div class="small">아직 기록이 없어요.</div>'}
+
+const showerGroups={
+  basic:[
+    ['준비','깨끗한 수건과 갈아입을 속옷/옷 준비'],
+    ['물온도','뜨겁지 않은 미지근한 물로 몸 적시기'],
+    ['머리','샴푸하는 날이면 두피 위주로 샴푸하기'],
+    ['머리','긴 머리는 린스/트리트먼트를 중간~끝에 바르고 잠깐 두기'],
+    ['얼굴','얼굴은 샤워 마지막에 순한 클렌저로 짧게 씻기'],
+    ['몸','바디워시나 비누로 목, 귀 뒤, 겨드랑이 씻기'],
+    ['몸','가슴밑/배/등/팔/다리 부드럽게 씻기'],
+    ['중요','사타구니 바깥쪽과 엉덩이, 발을 씻기'],
+    ['마무리','비누기가 남지 않게 충분히 헹구기']
+  ],
+  after:[
+    ['물기','수건으로 박박 문지르지 말고 톡톡 누르기'],
+    ['건조','겨드랑이, 가슴밑, 배 접히는 곳, 사타구니 바깥쪽, 발가락 사이 말리기'],
+    ['보습','몸이 건조한 부위에 바디로션/보습제 바르기'],
+    ['머리','두피를 먼저 말리고 머리 끝은 낮은 열로 말리기'],
+    ['정리','입은 옷은 세탁함에 넣고 젖은 수건은 널기']
+  ],
+  optional:[
+    ['제모','겨드랑이 제모가 필요하면 샤워 후반에, 피부가 부드러워졌을 때 하기'],
+    ['제모','다리 제모는 바디워시 거품이나 쉐이빙젤을 바르고 털 방향대로 천천히'],
+    ['제모후','제모 후 따가우면 향 있는 로션 말고 순한 보습제만'],
+    ['손발톱','손톱/발톱 길이 확인하기'],
+    ['향기','완전히 마른 뒤 깨끗한 옷 입기']
+  ]
+};
+function showerKey(i,group){return ymd(new Date())+'_shower_'+group+'_'+i}
+function renderShower(){
+  let total=0,done=0;
+  for(const [group,arr] of Object.entries(showerGroups)){
+    const target=document.getElementById(group==='basic'?'showerBasic':group==='after'?'showerAfter':'showerOptional');
+    if(!target) continue;
+    target.innerHTML=arr.map((t,i)=>{let id=showerKey(i,group), ok=!!state.checks[id]; total++; if(ok) done++; return `<div class="item ${ok?'done':''}" onclick="toggleShower('${id}')"><div class="box">${ok?'✓':''}</div><div><div class="txt">${t[1]}</div><div class="cat">${t[0]}</div></div></div>`}).join('');
+  }
+  const pct=total?Math.round(done/total*100):0;
+  const pt=document.getElementById('showerProg'), bar=document.getElementById('showerBar');
+  if(pt) pt.textContent=`${done} / ${total} 완료 (${pct}%)`;
+  if(bar) bar.style.width=pct+'%';
+}
+function toggleShower(id){state.checks[id]=!state.checks[id];save();renderShower();renderToday();renderCal()}
+
+function show(id,btn){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');btn.classList.add('active');if(id==='shower')renderShower();if(id==='levels')renderLevels();if(id==='calendar')renderCal()}
+function renderAll(){renderToday();renderShower();renderLevels();renderCal();renderWeight();renderDiary()}
+load();renderAll();
+</script>
+</body>
+</html>
